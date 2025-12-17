@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Star, MapPin, Phone, Mail, Instagram, Facebook, Twitter } from "lucide-react";
+import logo from "@assets/Gemini_Generated_Image_aojifdaojifdaoji-removebg-preview_1765989501127.png";
 
 const reviews = [
   {
@@ -63,7 +64,11 @@ export function Footer() {
           
           {/* Brand */}
           <div className="lg:col-span-1">
-            <h2 className="text-4xl font-black uppercase mb-4">BB</h2>
+            <img 
+              src={logo} 
+              alt="Bloom & Brew Logo" 
+              className="w-24 mb-6 invert brightness-0 opacity-90"
+            />
             <p className="font-mono text-sm opacity-60">
               Bloom & Brew Cafe.<br/>
               Est. 2024
