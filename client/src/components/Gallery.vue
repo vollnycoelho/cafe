@@ -36,45 +36,46 @@ const y4 = computed(() => isDesktop.value ? `translateY(${y.value * -0.35}px)` :
       </h2>
     </div>
 
-    <div class="container mx-auto px-4 relative">
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-8 w-full">
+    <div class="container mx-auto px-2 relative">
+      <!-- Mobile Collage Layout: Dense, chaotic, overlapping -->
+      <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-0 md:gap-8 w-full">
         
         <!-- Column 1 -->
-        <div :style="{ transform: y1 }" class="flex flex-col gap-8 md:gap-32 transition-transform duration-75 ease-out will-change-transform">
-          <div class="relative h-[400px] md:h-[60vh] w-full rounded-[2rem] overflow-hidden shadow-2xl">
+        <div :style="{ transform: y1 }" class="flex flex-col gap-0 md:gap-32 transition-transform duration-75 ease-out will-change-transform mt-8 md:mt-0">
+          <div class="relative h-[220px] md:h-[60vh] w-[115%] -ml-[5%] md:w-full md:ml-0 rounded-[1rem] md:rounded-[2rem] overflow-hidden shadow-xl rotate-6 md:rotate-0 z-10 mb-[-40px] md:mb-0">
             <img :src="images[0]" class="w-full h-full object-cover" alt="Gallery 1" />
           </div>
-          <div class="relative h-[300px] md:h-[40vh] w-[100%] md:w-[120%] md:-ml-[10%] rounded-[2rem] md:rounded-full overflow-hidden shadow-xl border-4 md:border-8 border-white z-10">
+          <div class="relative h-[180px] md:h-[40vh] w-[90%] ml-[15%] md:w-[120%] md:-ml-[10%] rounded-[1rem] md:rounded-full overflow-hidden shadow-lg border-4 md:border-8 border-white z-20 -rotate-3 md:rotate-0">
              <img :src="images[4]" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" alt="Gallery 2" />
           </div>
         </div>
 
         <!-- Column 2 -->
-        <div :style="{ transform: y2 }" class="flex flex-col gap-8 md:gap-48 md:pt-48 transition-transform duration-75 ease-out will-change-transform">
-           <div class="relative h-[350px] md:h-[45vh] w-full rounded-[2rem] md:rounded-[3rem] overflow-hidden shadow-2xl rotate-1 md:rotate-3">
+        <div :style="{ transform: y2 }" class="flex flex-col gap-0 md:gap-48 md:pt-48 transition-transform duration-75 ease-out will-change-transform mt-0 md:mt-0 pl-2">
+           <div class="relative h-[260px] md:h-[45vh] w-[110%] -ml-[10%] md:w-full md:ml-0 rounded-[1rem] md:rounded-[3rem] overflow-hidden shadow-xl -rotate-2 md:rotate-3 z-0 mb-[-30px] md:mb-0">
             <img :src="images[1]" class="w-full h-full object-cover scale-110" alt="Gallery 3" />
           </div>
-          <div class="relative h-[500px] md:h-[70vh] w-[100%] md:w-[110%] md:-ml-[5%] rounded-[2rem] overflow-hidden shadow-2xl z-20 border-4 border-white">
+          <div class="relative h-[200px] md:h-[70vh] w-full md:w-[110%] md:-ml-[5%] rounded-[1rem] md:rounded-[2rem] overflow-hidden shadow-xl z-10 border-4 border-white rotate-3 md:rotate-0">
             <img :src="images[5]" class="w-full h-full object-cover" alt="Gallery 4" />
           </div>
         </div>
 
         <!-- Column 3 -->
-        <div :style="{ transform: y3 }" class="flex flex-col gap-8 md:gap-24 md:pt-24 transition-transform duration-75 ease-out will-change-transform">
-           <div class="relative h-[450px] md:h-[65vh] w-[100%] md:w-[110%] md:-ml-[5%] rounded-[2rem] overflow-hidden shadow-2xl -rotate-1 md:-rotate-2 z-10">
+        <div :style="{ transform: y3 }" class="flex flex-col gap-0 md:gap-24 md:pt-24 transition-transform duration-75 ease-out will-change-transform mt-[-20px] md:mt-0">
+           <div class="relative h-[240px] md:h-[65vh] w-[120%] -ml-[10%] md:w-[110%] md:-ml-[5%] rounded-[1rem] md:rounded-[2rem] overflow-hidden shadow-xl rotate-2 md:-rotate-2 z-10 mb-[-50px] md:mb-0">
             <img :src="images[2]" class="w-full h-full object-cover" alt="Gallery 5" />
           </div>
-           <div class="relative h-[250px] md:h-[30vh] w-[80%] ml-[10%] rounded-full overflow-hidden shadow-lg border-[8px] md:border-[12px] border-white z-30">
+           <div class="relative h-[180px] md:h-[30vh] w-[80%] ml-[20%] md:w-[80%] md:ml-[10%] rounded-full overflow-hidden shadow-lg border-4 md:border-[12px] border-white z-30">
             <img :src="images[6]" class="w-full h-full object-cover" alt="Gallery 6" />
           </div>
         </div>
 
         <!-- Column 4 -->
-        <div :style="{ transform: y4 }" class="flex md:hidden lg:flex flex-col gap-8 md:gap-40 md:pt-[40vh] transition-transform duration-75 ease-out will-change-transform">
-          <div class="relative h-[300px] md:h-[40vh] w-full rounded-[2rem] overflow-hidden shadow-xl">
+        <div :style="{ transform: y4 }" class="flex flex-col gap-0 md:gap-40 md:pt-[40vh] transition-transform duration-75 ease-out will-change-transform mt-4 md:mt-0 pl-2">
+          <div class="relative h-[190px] md:h-[40vh] w-[105%] -ml-[2.5%] md:w-full md:ml-0 rounded-[1rem] md:rounded-[2rem] overflow-hidden shadow-xl -rotate-6 md:rotate-0 z-0 mb-[-20px] md:mb-0">
              <img :src="images[3]" class="w-full h-full object-cover" alt="Gallery 7" />
           </div>
-           <div class="relative h-[400px] md:h-[55vh] w-[100%] md:w-[140%] md:-ml-[40%] rounded-[2rem] md:rounded-[4rem] overflow-hidden shadow-2xl border-4 border-white z-20">
+           <div class="relative h-[280px] md:h-[55vh] w-[110%] -ml-[5%] md:w-[140%] md:-ml-[40%] rounded-[1rem] md:rounded-[4rem] overflow-hidden shadow-2xl border-4 border-white z-20 rotate-2 md:rotate-0">
              <img :src="images[7]" class="w-full h-full object-cover" alt="Gallery 8" />
           </div>
         </div>
