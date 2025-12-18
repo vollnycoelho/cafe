@@ -14,10 +14,10 @@ const { width } = useWindowSize()
 
 const isDesktop = computed(() => width.value >= 1024)
 
-const y1 = computed(() => isDesktop.value ? `perspective(800px) translateY(${y.value * 0.15}px) rotateX(${y.value * 0.05}deg) rotateZ(${y.value * 0.02}deg)` : 'none')
-const y2 = computed(() => isDesktop.value ? `perspective(800px) translateY(${y.value * 0.25}px) rotateX(${y.value * 0.08}deg) rotateZ(${y.value * -0.03}deg)` : 'none')
-const y3 = computed(() => isDesktop.value ? `perspective(800px) translateY(${y.value * 0.2}px) rotateX(${y.value * 0.06}deg) rotateZ(${y.value * 0.025}deg)` : 'none')
-const y4 = computed(() => isDesktop.value ? `perspective(800px) translateY(${y.value * 0.3}px) rotateX(${y.value * 0.09}deg) rotateZ(${y.value * -0.02}deg)` : 'none')
+const y1 = computed(() => isDesktop.value ? `translateY(${y.value * 0.15}px) scale(${1 + y.value * 0.0002}) skewY(${y.value * 0.01}deg)` : 'none')
+const y2 = computed(() => isDesktop.value ? `translateY(${y.value * 0.25}px) scale(${1 + y.value * 0.0003}) skewY(${y.value * -0.015}deg)` : 'none')
+const y3 = computed(() => isDesktop.value ? `translateY(${y.value * 0.2}px) scale(${1 + y.value * 0.00025}) skewY(${y.value * 0.012}deg)` : 'none')
+const y4 = computed(() => isDesktop.value ? `translateY(${y.value * 0.3}px) scale(${1 + y.value * 0.00035}) skewY(${y.value * -0.01}deg)` : 'none')
 </script>
 
 <template>
