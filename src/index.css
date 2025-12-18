@@ -36,15 +36,6 @@
   --color-border: hsl(150 30% 85%);
   --color-input: hsl(150 30% 85%);
   --color-ring: hsl(150 60% 15%);
-  
-  --color-sidebar: hsl(40 20% 94%);
-  --color-sidebar-foreground: hsl(150 60% 10%);
-  --color-sidebar-primary: hsl(150 60% 15%);
-  --color-sidebar-primary-foreground: hsl(40 20% 94%);
-  --color-sidebar-accent: hsl(30 40% 90%);
-  --color-sidebar-accent-foreground: hsl(150 60% 10%);
-  --color-sidebar-border: hsl(150 30% 85%);
-  --color-sidebar-ring: hsl(150 60% 15%);
 
   --font-sans: 'Syne', sans-serif;
   --font-mono: 'Space Mono', monospace;

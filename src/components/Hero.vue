@@ -1,25 +1,12 @@
 <script setup>
-import { ref } from 'vue'
 import { ArrowRight } from 'lucide-vue-next'
 import logo from '@assets/Gemini_Generated_Image_aojifdaojifdaoji-removebg-preview_1765989501127.png'
-import heroVideo from '@assets/SaveVid.Net_AQOtiZRNooK8FIOcBJA0I1scj7vysEzt8wvwbS26TbjUME8oXP_1765989520939.mp4'
-
-const target = ref(null)
 </script>
 
 <template>
   <section class="relative h-screen w-full overflow-hidden bg-primary">
-    <div class="absolute inset-0 z-0">
-      <video
-        autoplay
-        loop
-        muted
-        playsinline
-        class="h-full w-full object-cover opacity-80"
-      >
-        <source :src="heroVideo" type="video/mp4" />
-      </video>
-      <div class="absolute inset-0 bg-black/30 backdrop-blur-[2px]"></div>
+    <div class="absolute inset-0 z-0 bg-gradient-to-b from-primary via-primary/80 to-primary">
+      <div class="absolute inset-0 bg-black/20"></div>
     </div>
 
     <div 
