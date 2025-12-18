@@ -23,7 +23,7 @@ const y4 = computed(() => isDesktop.value ? `translateY(${y.value * -0.35}px)` :
 <template>
   <section ref="container" class="relative py-12 md:py-12 bg-white overflow-hidden">
     
-    <div class="px-4 md:px-12 mb-12 md:mb-12 text-white pointer-events-none">
+    <div class="sticky top-12 z-50 px-4 md:px-12 mb-12 md:mb-12 mix-blend-exclusion text-white pointer-events-none">
       <h2 
         class="text-[15vw] md:text-[12vw] leading-[0.8] font-black uppercase tracking-tighter"
         v-motion
