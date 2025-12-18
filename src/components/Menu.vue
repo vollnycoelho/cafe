@@ -1,5 +1,5 @@
 <script setup>
-import { Play } from 'lucide-vue-next'
+import { Play, ShoppingBag, UtensilsCrossed } from 'lucide-vue-next'
 import img1 from "@assets/generated_images/cafe_storefront_exterior.png"
 import img2 from "@assets/generated_images/barista_pouring_coffee.png"
 import img3 from "@assets/generated_images/delicious_cafe_food_spread.png"
@@ -68,6 +68,28 @@ const galleryImages = [img1, img2, img3, img4]
             Watch More →
           </a>
         </div>
+      </div>
+
+      <div class="flex flex-col md:flex-row gap-6 justify-center items-center mt-16">
+        <a
+          href="https://swiggy.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="w-full md:w-auto px-8 py-4 bg-[#FC8019] text-white font-bold rounded-xl flex items-center justify-center gap-3 shadow-lg hover:shadow-xl hover:scale-105 transition-all"
+        >
+          <ShoppingBag class="w-5 h-5" />
+          Order on Swiggy
+        </a>
+        
+        <a
+          href="https://zomato.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="w-full md:w-auto px-8 py-4 bg-[#CB202D] text-white font-bold rounded-xl flex items-center justify-center gap-3 shadow-lg hover:shadow-xl hover:scale-105 transition-all"
+        >
+          <UtensilsCrossed class="w-5 h-5" />
+          Order on Zomato
+        </a>
       </div>
     </div>
   </section>
