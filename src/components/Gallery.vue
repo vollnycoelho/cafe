@@ -25,7 +25,7 @@ const y4 = computed(() => isDesktop.value ? `perspective(800px) translateY(${y.v
     
     <div class="sticky top-8 z-50 px-4 md:px-12 mb-6 mix-blend-exclusion text-white pointer-events-none">
       <h2 
-        class="text-[8vw] md:text-[5vw] leading-[0.9] font-black uppercase tracking-tighter"
+        class="text-[12vw] md:text-[8vw] leading-[0.9] font-black uppercase tracking-tighter"
         v-motion
         :initial="{ opacity: 0, y: 30 }"
         :visible="{ opacity: 1, y: 0 }"
