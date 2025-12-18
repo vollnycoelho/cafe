@@ -1,7 +1,8 @@
 <script setup>
 const location = "Bloom & Brew, survey no. 199/1 boura vaddo, Assagao, Assagao, Goa 403507"
 const directLink = "https://maps.app.goo.gl/GzqYFitxi2TX3PCa7"
-const embedUrl = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3825.2695156!2d73.83753!3d15.5751!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbf5d9c93c0ccd7%3A0x3bbf5d9c93c0ccd7!2sBloom%20%26%20Brew!5e0!3m2!1sen!2sin!4v1703004000"
+// Using search-based URL that looks up the cafe by name and location
+const embedUrl = "https://www.google.com/maps/embed/v1/place?key=AIzaSyB41DaxN4lrWGV4sUJbu9nE56sFuCQD8-E&q=Bloom+and+Brew,+survey+no+199/1+boura+vaddo,+Assagao,+Goa+403507"
 </script>
 
 <template>
