@@ -1,6 +1,7 @@
 <script setup>
 const location = "Bloom & Brew, survey no. 199/1 boura vaddo, Assagao, Assagao, Goa 403507"
-const mapUrl = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3824.5267854584707!2d73.84097792346928!3d15.567825699999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbfaa0e2b6d6d6d%3A0x1234567890abcdef!2sBloom%20%26%20Brew!5e0!3m2!1sen!2sin!4v1234567890"
+const mapUrl = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3825.269!2d73.8376!3d15.5751!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbf5d9c93c0ccd7%3A0x3bbf5d9c93c0ccd7!2sBloom%20%26%20Brew!5e0!3m2!1sen!2sin!4v1703004000000"
+const directLink = "https://maps.app.goo.gl/GzqYFitxi2TX3PCa7"
 </script>
 
 <template>
@@ -23,9 +24,19 @@ const mapUrl = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3824.52678
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
-        <p class="text-center mt-6 font-mono text-sm text-primary/70">
-          {{ location }}
-        </p>
+        <div class="text-center mt-8 space-y-4">
+          <p class="font-mono text-sm text-primary/70">
+            {{ location }}
+          </p>
+          <a
+            :href="directLink"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-block px-6 py-2 bg-accent text-white font-bold rounded-lg hover:bg-accent/90 transition-all hover:scale-105"
+          >
+            Open in Google Maps →
+          </a>
+        </div>
       </div>
     </div>
   </section>
