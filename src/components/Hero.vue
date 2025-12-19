@@ -9,7 +9,6 @@ const videoRef = ref(null)
 onMounted(() => {
   if (videoRef.value) {
     videoRef.value.play().catch(() => {
-      // Autoplay failed
     })
   }
 })
@@ -24,7 +23,6 @@ onMounted(() => {
         loop
         muted
         playsinline
-        webkit-playsinline="true"
         class="h-full w-full object-cover opacity-80"
       >
         <source :src="heroVideo" type="video/mp4" />
